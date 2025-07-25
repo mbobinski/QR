@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Quote</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .quote-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .quote {
+      font-size: 1.8rem;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      width: 100%;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    .ad-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .ad-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #00c4ff;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .ad-button:hover {
+      background: #00a0d4;
+    }
+
+    @media (max-width: 480px) {
+      .quote {
+        font-size: 1.3rem;
+        padding: 20px;
+      }
+
+      .ad-title {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-container">
+    <div class="quote" id="quote">
+      “{{TEXT}}”
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="ad-title">Try for free – Air Challenge!</div>
+    <a href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge"><img src="{{ url_for('static', filename='LogoRoundes.png') }}" alt="Air Challenge" width="200"></a>
+    <br>
+    <a href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge"><img src="{{ url_for('static', filename='GooglePlay.png') }}" alt="Air Challenge" width="100"></a>
+    <a href="https://apps.apple.com/gb/app/air-challenge/id6745328739"><img src="{{ url_for('static', filename='AppStore.png') }}" alt="Air Challenge" width="100"></a>
+    <br>
+    <a class="ad-button" href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge" target="_blank">
+            Download Now
+    </a>
+  </div>
+</body>
+</html>
