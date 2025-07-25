@@ -1,7 +1,7 @@
 from flask import Flask
 import os
 
-from QR import Texts
+import Texts
 
 app = Flask(__name__)
 
