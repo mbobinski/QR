@@ -83,6 +83,34 @@
         font-size: 1rem;
       }
     }
+
+    .shop-banner {
+      margin-top: 20px;
+      background: #fff;
+      border: 2px solid #00c4ff;
+      border-radius: 15px;
+      padding: 15px 20px;
+      text-align: center;
+      color: #333;
+      font-weight: 500;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .shop-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00c4ff;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .shop-button:hover {
+      background: #0099cc;
+    }
   </style>
 </head>
 <body>
@@ -94,14 +122,20 @@
 
   <div class="footer">
     <div class="ad-title">Try for free – Air Challenge!</div>
-    <a href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge"><img src="{{ url_for('static', filename='LogoRoundes.png') }}" alt="Air Challenge" width="200"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge"><img src="{{ url_for('static', filename='LogoRoundes.png') }}" alt="Air Challenge" width="100"></a>
     <br>
-    <a href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge"><img src="{{ url_for('static', filename='GooglePlay.png') }}" alt="Air Challenge" width="100"></a>
-    <a href="https://apps.apple.com/gb/app/air-challenge/id6745328739"><img src="{{ url_for('static', filename='AppStore.png') }}" alt="Air Challenge" width="100"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge"><img src="{{ url_for('static', filename='GooglePlay.png') }}" alt="Air Challenge" width="50"></a>
+    <a href="https://apps.apple.com/gb/app/air-challenge/id6745328739"><img src="{{ url_for('static', filename='AppStore.png') }}" alt="Air Challenge" width="50"></a>
     <br>
     <a class="ad-button" href="https://play.google.com/store/apps/details?id=com.InfinityPixelStudio.AirChallenge" target="_blank">
             Download Now
     </a>
   </div>
+  <div class="shop-banner">
+  <span>Love the daily quotes? Wear them.</span>
+  <a href="https://www.redbubble.com/people/infinitypixels8/shop" target="_blank" class="shop-button">
+    Get the Shirt
+  </a>
+</div>
 </body>
 </html>
